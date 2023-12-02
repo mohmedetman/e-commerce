@@ -1,0 +1,11 @@
+{
+    "name": "Tage",
+    "alias": "tage",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Tage\\Providers\\TageServiceProvider"
+    ],
+    "files": []
+}
