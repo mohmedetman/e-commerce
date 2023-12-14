@@ -47,12 +47,7 @@ class ProductCategoryAction
 
     public function store(array $data)
     {
-        // if (!$data['is_active'])
-        //     $data['is_active'] = 0;
-        // // $request->request->add(['is_active' => 0]);
-        // else
-        //     $data['is_active'] = 1;
-        // // $request->request->add(['is_active' => 1]);
+      
         if (isset($data['photo'])) {
             $data['photo'] = $this->upload($data['photo'], 'product-category');
         }

@@ -15,9 +15,11 @@ class CreateProductCategoryRequest extends FormRequest
     {
 
         return [
+            // 'name'=>'required',
             'is_active' => 'nullable',
             'photo' => 'nullable',
             'parent_id' => 'nullable',
+            'type' => 'required|in:1,2',
             'slug' => 'required|unique:categories,slug,' . $this->id
         ];
     }

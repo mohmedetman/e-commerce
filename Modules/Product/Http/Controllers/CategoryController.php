@@ -48,6 +48,7 @@ class CategoryController extends Controller
      */
     public function store(CreateProductCategoryRequest $request)
     {
+        // return $request ;
 
         // $data = $request->validated();
         if (!$request->has('is_active'))

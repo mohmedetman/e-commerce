@@ -44,11 +44,7 @@ class TageController extends Controller
     public function store(CreateTageRequest $request)
     {
 
-        // $data = $request->validated();
-        if (!$request->has('is_active'))
-            $request->request->add(['is_active' => 0]);
-        else
-            $request->request->add(['is_active' => 1]);
+       
         $tage =  $this->tageAction->store($request->all());
         return redirect()->route('admin.tage.index')->with('success', 'product  Category has been added');
     }
